@@ -183,7 +183,6 @@ if __name__ == '__main__':
 
     print(f'----- NOTE: using audio from {AUDIO_FROM} !')
     checkpoint_1 = args.checkpoint
-    checkpoint_1 = "/home/yaoting_wang/segment-anything-main/segment_anything/checkpoint/sam_vit_b_01ec64.pth"
     input(f' --- Run with checkpoint: {checkpoint_1}, continue? ---')
 
     loss_fn = get_loss_fn(args.loss, device='cuda')
