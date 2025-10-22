@@ -38,7 +38,7 @@ class AVS(Dataset):
         self.model = model
         self.transform = ResizeLongestSide(self.model.image_encoder.img_size)
 
-        meta_path = f'segment_anything/dataset/v3/{metafile}.csv'  # one-shot: metafile='v3_1_shot/train.csv'
+        meta_path = f'../segment_anything/dataset/v3/{metafile}.csv'  # one-shot: metafile='v3_1_shot/train.csv'
         self.metadata = pd.read_csv(meta_path, header=0)
 
         self.audio = None
